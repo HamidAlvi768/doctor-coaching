@@ -32,8 +32,8 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     <?php $this->head() ?>
     <!-- CSS Files -->
     <link rel="stylesheet" href="<?= Yii::getAlias('@web/css/bootstrap.min.css') ?>">
-    <link rel="stylesheet" href="<?= Yii::getAlias('@web/css/owl.carousel.min.css') ?>">
-    <link rel="stylesheet" href="<?= Yii::getAlias('@web/css/owl.theme.default.min.css') ?>">
+    <!-- <link rel="stylesheet" href="<?= Yii::getAlias('@web/css/owl.carousel.min.css') ?>"> -->
+    <!-- <link rel="stylesheet" href="<?= Yii::getAlias('@web/css/owl.theme.default.min.css') ?>"> -->
     <link rel="stylesheet" href="<?= Yii::getAlias('@web/css/magnific-popup.css') ?>">
     <link rel="stylesheet" href="<?= Yii::getAlias('@web/css/font-awesome.min.css') ?>">
     <link rel="stylesheet" href="<?= Yii::getAlias('@web/css/themify-icons.css') ?>">
@@ -43,6 +43,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     <link rel="stylesheet" href="<?= Yii::getAlias('@web/css/animate.css') ?>">
     <link rel="stylesheet" href="<?= Yii::getAlias('@web/css/slicknav.css') ?>">
     <link rel="stylesheet" href="<?= Yii::getAlias('@web/css/style.css') ?>">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
     <style>
         .faculty_area {
             background-color: #f9f9f9;
@@ -468,7 +469,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     <script src="<?= Yii::getAlias('@web/js/vendor/jquery-1.12.4.min.js') ?>"></script>
     <script src="<?= Yii::getAlias('@web/js/popper.min.js') ?>"></script>
     <script src="<?= Yii::getAlias('@web/js/bootstrap.min.js') ?>"></script>
-    <script src="<?= Yii::getAlias('@web/js/owl.carousel.min.js') ?>"></script>
+    <!-- <script src="<?= Yii::getAlias('@web/js/owl.carousel.min.js') ?>"></script> -->
     <script src="<?= Yii::getAlias('@web/js/isotope.pkgd.min.js') ?>"></script>
     <script src="<?= Yii::getAlias('@web/js/ajax-form.js') ?>"></script>
     <script src="<?= Yii::getAlias('@web/js/waypoints.min.js') ?>"></script>
@@ -505,6 +506,13 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         JS;
         $this->registerJs($js, \yii\web\View::POS_END);
     ?>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // Animation duration in ms
+        once: true     // Only animate once
+      });
+    </script>
     <?php $this->endBody() ?>
 </body>
 

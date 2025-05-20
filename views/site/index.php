@@ -15,72 +15,79 @@ $this->title = 'Home';
     }
 }
 </style>
-<!-- slider_area_start (Bootstrap Carousel) -->
-<div id="heroCarousel" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#heroCarousel" data-slide-to="1"></li>
-    <li data-target="#heroCarousel" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active slider_bg_1 d-flex align-items-center" style="min-height: 400px;">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-12">
-            <div class="slider_text">
-              <h3>We believe in</h3>
-              <h3>Quality education</h3>
-              <p class="text-dark hideonmobile">Let us help you in your medical exam</p>
+<!-- HERO SECTION START (Bootstrap Carousel) -->
+<div class="slider_area" data-aos="fade-up">
+  <div id="heroCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#heroCarousel" data-slide-to="1"></li>
+      <li data-target="#heroCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="single_slider d-flex align-items-center slider_bg_1" style="width:100%;">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="slider_text text-left">
+                  <h3>We believe in<br>Quality education</h3>
+                  <p class="text-dark hideonmobile">Let us help you in your medical exam</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="single_slider d-flex align-items-center slider_bg_2" style="width:100%;">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="slider_text text-left">
+                  <h3>Become the doctor,<br>the world needs.</h3>
+                  <a href="#" class="btn btn-primary mx-2">Get Start</a>
+                  <a href="#" class="btn btn-info mx-2">Take a tour</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="single_slider d-flex align-items-center slider_bg_3" style="width:100%;">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="slider_text text-left">
+                  <h3>Boost up your skills <br>with a new way of <br>learning.</h3>
+                  <a href="#" class="btn btn-primary mx-2">Get Start</a>
+                  <a href="#" class="btn btn-info mx-2">Take a tour</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="carousel-item slider_bg_2 d-flex align-items-center" style="min-height: 400px;">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-12">
-            <div class="slider_text">
-              <h3>Become the doctor,<br>the world needs.</h3>
-              <a href="#" class="boxed-btn3" style="background-color: #2f5b62 !important;">Get Start</a>
-              <a href="#" class="boxed-btn4" style="background-color: #52a8dd !important;">Take a tour</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="carousel-item slider_bg_3 d-flex align-items-center" style="min-height: 400px;">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-12">
-            <div class="slider_text">
-              <h3>Boost up your skills <br>with a new way of <br>learning.</h3>
-              <a href="#" class="boxed-btn3" style="background-color: #2f5b62 !important;">Get Start</a>
-              <a href="#" class="boxed-btn4" style="background-color: #52a8dd !important;">Take a tour</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
-  <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
 </div>
-<!-- slider_area_end -->
+<!-- HERO SECTION END -->
 
     <!-- service_area_start  -->
-    <div class="service_area gray_bg">
+    <div class="service_area gray_bg" data-aos="fade-up">
         <div class="container">
             <div class="row justify-content-center ">
                 
                 <div class="col-lg-3">
-                    <div class="single_service d-flex flex-column align-items-center justify-content-between">
+                    <div class="single_service service-card-1 d-flex flex-column align-items-center justify-content-between" data-aos="fade-up">
                         <div class="icon mb-3">
                             <img src="<?= Yii::getAlias('@web/img/program/pmdcpng.png') ?>"
                             alt="" style="width:104%; margin-top:-2px;">
@@ -94,7 +101,7 @@ $this->title = 'Home';
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="single_service d-flex flex-column align-items-center justify-content-between">
+                    <div class="single_service service-card-2 d-flex flex-column align-items-center justify-content-between" data-aos="fade-up" data-aos-delay="100">
                         <div class="icon mb-3">
                             <img src="<?= Yii::getAlias('@web/img/program/pmdcpng.png') ?>"
                             alt="" style="width:104%; margin-top:-2px;">
@@ -108,7 +115,7 @@ $this->title = 'Home';
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="single_service d-flex flex-column align-items-center justify-content-between">
+                    <div class="single_service service-card-3 d-flex flex-column align-items-center justify-content-between" data-aos="fade-up" data-aos-delay="200">
                         <div class="icon mb-3">
                             <img src="<?= Yii::getAlias('@web/img/program/pmdcpng.png') ?>"
                             alt="" style="width:104%; margin-top:-2px;">
@@ -122,7 +129,7 @@ $this->title = 'Home';
                     </div>
                 </div>
                 <div class="col-lg-3">
-                    <div class="single_service d-flex flex-column align-items-center justify-content-between">
+                    <div class="single_service service-card-4 d-flex flex-column align-items-center justify-content-between" data-aos="fade-up" data-aos-delay="300">
                         <div class="icon mb-3">
                             <i class="fa fa-users"></i>
                         </div>
@@ -140,7 +147,7 @@ $this->title = 'Home';
     <!--/ service_area_start  -->
 
     <!-- popular_program_area_start  -->
-    <div class="popular_program_area section__padding" id="popular_program">
+    <div class="popular_program_area section__padding" id="popular_program" data-aos="fade-up">
         <div class="container">
             <div class="row section__padding">
                 <div class="col-lg-12 mb-5">
@@ -149,7 +156,7 @@ $this->title = 'Home';
                     </div>
                 </div>
                 <div class="col-lg-12">
-                    <p class="text-dark">
+                    <p class="text-dark" style="position: relative; z-index: 111;">
                   
 At Doctors Coaching Academy Islamabad, we provide comprehensive programs for medical graduates, available both online and offline. Our expert instructors and innovative teaching methods prepare students for essential post-MBBS licensure exams and certifications, including PMDC NRE, USMLE Step 1, and FCPS, among others. Whether you're aiming for qualifications in Pakistan or abroad, we ensure that quality education is accessible to help you succeed in your medical career!
                     </p>
@@ -207,7 +214,7 @@ At Doctors Coaching Academy Islamabad, we provide comprehensive programs for med
     <!-- popular_program_area_end -->
 
     <!-- latest_coures_area_start  -->
-    <div class="latest_coures_area">
+    <div class="latest_coures_area" data-aos="fade-up">
         <div class="latest_coures_inner">
             <div class="container">
                 <div class="row">
@@ -245,7 +252,7 @@ At Doctors Coaching Academy Islamabad, we provide comprehensive programs for med
     <!--/ latest_coures_area_end -->
 
     <!-- recent_event_area_strat  -->
-    <div class="recent_event_area section__padding">
+    <div class="recent_event_area section__padding" data-aos="fade-up">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-10">

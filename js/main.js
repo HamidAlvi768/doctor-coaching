@@ -13,41 +13,41 @@ $(window).on('scroll', function () {
 });
 
 // review-active
-$('.slider_active').owlCarousel({
-  loop: false, // Disable infinite loop
-  margin: 0,
-  items: 1,
-  autoplay: false, // Disable autoplay
-  navText: ['<i class="flaticon-left-arrow"></i>', '<i class="flaticon-right-arrow"></i>'],
-  nav: false, // Disable navigation buttons
-  dots: false, // Disable dots navigation
-  autoplayHoverPause: false, // Disable autoplay pause on hover
-  autoplaySpeed: 800,
-  mouseDrag: false, // Disable dragging with mouse
-  touchDrag: false, // Disable dragging with touch/swipe
-  responsive: {
-    0: {
-      items: 1,
-      nav: false,
-    },
-    767: {
-      items: 1,
-      nav: false,
-    },
-    992: {
-      items: 1,
-      nav: false,
-    },
-    1200: {
-      items: 1,
-      nav: false,
-    },
-    1600: {
-      items: 1,
-      nav: false,
-    }
-  }
-});
+// $('.slider_active').owlCarousel({
+//   loop: false, // Disable infinite loop
+//   margin: 0,
+//   items: 1,
+//   autoplay: false, // Disable autoplay
+//   navText: ['<i class="flaticon-left-arrow"></i>', '<i class="flaticon-right-arrow"></i>'],
+//   nav: false, // Disable navigation buttons
+//   dots: false, // Disable dots navigation
+//   autoplayHoverPause: false, // Disable autoplay pause on hover
+//   autoplaySpeed: 800,
+//   mouseDrag: false, // Disable dragging with mouse
+//   touchDrag: false, // Disable dragging with touch/swipe
+//   responsive: {
+//     0: {
+//       items: 1,
+//       nav: false,
+//     },
+//     767: {
+//       items: 1,
+//       nav: false,
+//     },
+//     992: {
+//       items: 1,
+//       nav: false,
+//     },
+//     1200: {
+//       items: 1,
+//       nav: false,
+//     },
+//     1600: {
+//       items: 1,
+//       nav: false,
+//     }
+//   }
+// });
 
 
 $(document).ready(function(){
@@ -150,100 +150,66 @@ $('.popup-video').magnificPopup({
   // blog-page
 
   //brand-active
-$('.brand-active').owlCarousel({
-  loop:true,
-  margin:30,
-items:1,
-autoplay:true,
-  nav:false,
-dots:false,
-autoplayHoverPause: true,
-autoplaySpeed: 800,
-  responsive:{
-      0:{
-          items:1,
-          nav:false
-
-      },
-      767:{
-          items:4
-      },
-      992:{
-          items:7
-      }
-  }
-});
+// $('.brand-active').owlCarousel({
+//   loop:true,
+//   margin:30,
+//   items:1,
+//   autoplay:true,
+//   nav:false,
+//   dots:false,
+//   autoplayHoverPause: true,
+//   autoplaySpeed: 800,
+//   responsive:{
+//       0:{ items:1, nav:false },
+//       767:{ items:4 },
+//       992:{ items:7 }
+//   }
+// });
 
 // blog-dtails-page
 
   //project-active
-$('.project-active').owlCarousel({
-  loop:true,
-  margin:30,
-items:1,
-// autoplay:true,
-navText:['<i class="Flaticon flaticon-left-arrow"></i>','<i class="Flaticon flaticon-right-arrow"></i>'],
-nav:true,
-dots:false,
-// autoplayHoverPause: true,
-// autoplaySpeed: 800,
-  responsive:{
-      0:{
-          items:1,
-          nav:false
-
-      },
-      767:{
-          items:1,
-          nav:false
-      },
-      992:{
-          items:2,
-          nav:false
-      },
-      1200:{
-          items:1,
-      },
-      1501:{
-          items:2,
-      }
-  }
-});
+// $('.project-active').owlCarousel({
+//   loop:true,
+//   margin:30,
+//   items:1,
+//   // autoplay:true,
+//   navText:['<i class="Flaticon flaticon-left-arrow"></i>','<i class="Flaticon flaticon-right-arrow"></i>'],
+//   nav:true,
+//   dots:false,
+//   // autoplayHoverPause: true,
+//   // autoplaySpeed: 800,
+//   responsive:{
+//       0:{ items:1, nav:false },
+//       767:{ items:1, nav:false },
+//       992:{ items:2, nav:false },
+//       1200:{ items:1 },
+//       1501:{ items:2 }
+//   }
+// });
 
 if (document.getElementById('default-select')) {
   $('select').niceSelect();
 }
 
   //about-pro-active
-$('.details_active').owlCarousel({
-  loop:true,
-  margin:0,
-items:1,
-// autoplay:true,
-navText:['<i class="ti-angle-left"></i>','<i class="ti-angle-right"></i>'],
-nav:true,
-dots:false,
-// autoplayHoverPause: true,
-// autoplaySpeed: 800,
-  responsive:{
-      0:{
-          items:1,
-          nav:false
-
-      },
-      767:{
-          items:1,
-          nav:false
-      },
-      992:{
-          items:1,
-          nav:false
-      },
-      1200:{
-          items:1,
-      }
-  }
-});
+// $('.details_active').owlCarousel({
+//   loop:true,
+//   margin:0,
+//   items:1,
+//   // autoplay:true,
+//   navText:['<i class="ti-angle-left"></i>','<i class="ti-angle-right"></i>'],
+//   nav:true,
+//   dots:false,
+//   // autoplayHoverPause: true,
+//   // autoplaySpeed: 800,
+//   responsive:{
+//       0:{ items:1, nav:false },
+//       767:{ items:1, nav:false },
+//       992:{ items:1, nav:false },
+//       1200:{ items:1 }
+//   }
+// });
 
 });
 
